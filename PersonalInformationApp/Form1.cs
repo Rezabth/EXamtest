@@ -26,7 +26,7 @@ namespace PersonalInformationApp
             var dateofbirth = int.Parse(dateTimePicker1.Value.ToString("yyyyMMdd"));
             var todaydate = int.Parse(DateTime.Today.ToString("yyyyMMdd"));
             var age = ((todaydate - dateofbirth )/ 10000).ToString();
-            //  MessageBox.Show(name + Environment.NewLine + email + Environment.NewLine + phone + Environment.NewLine + age);
+             MessageBox.Show(name + Environment.NewLine + email + Environment.NewLine + phone + Environment.NewLine + age);
 
             richTextBox1.Text=name+Environment.NewLine+email+Environment.NewLine+phone+Environment.NewLine+age;
             saveFileDialog1.ShowDialog();
